@@ -22,6 +22,10 @@ public class JwtUserDetailsService implements UserDetailsService {
 	@Autowired
 	private PasswordEncoder bcryptEncoder;
 
+	
+	/*
+	 * loadUserByUsername this is an function inside UserDetailsService interface which exist in spring security.
+	 */
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		DAOUser user = userDao.findByUsername(username);
