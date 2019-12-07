@@ -22,7 +22,10 @@ public class SwaggerConfig {
 		return new Docket(DocumentationType.SWAGGER_2).groupName("public-api")
 				.apiInfo(apiInfo()).select().paths(postPaths()).build();
 	}
-
+/*
+ * Inside postPaths method we pass regular expression like any API hit which is coming  from /api/post.* 
+ * or /api/javainuse.* Swagger will document all api's.
+ */
 	private Predicate<String> postPaths() {
 		return or(regex("/api/posts.*"), regex("/api/javainuse.*"));
 	}
