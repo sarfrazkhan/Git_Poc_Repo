@@ -27,6 +27,10 @@ public class SwaggerConfig {
 		return or(regex("/api/posts.*"), regex("/api/javainuse.*"));
 	}
 
+	/*
+	 * These all below details will be available on the Swagger UI page.
+	 * Where we can hit the API.And basically swagger will help us in API documentation as well.
+	 */
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder().title("RouteMenu API")
 				.description("RouteMenu API reference for developers")
