@@ -6,6 +6,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/* test commit */
+
 @SpringBootApplication
 @EnableJpaAuditing
 @EnableSwagger2
